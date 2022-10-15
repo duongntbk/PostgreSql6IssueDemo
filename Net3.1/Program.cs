@@ -12,7 +12,7 @@ namespace Net31
             var dbContext = DomainContext.Create(CONSTR);
             var baby = await dbContext.People.SingleOrDefaultAsync(p => p.Name == "Baby Doe");
             
-            baby.Dob = DateTime.Now;
+            baby.NickName = Guid.NewGuid().ToString();
             dbContext.Set<Person>().Update(baby);
             await dbContext.SaveChangesAsync();
 

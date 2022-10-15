@@ -12,6 +12,8 @@ namespace Net31
 
         public string Name { get; set; }
 
+        public string NickName { get; set; }
+
         public DateTime Dob { get; set; }
     }
 }

@@ -10,7 +10,7 @@ else
 }
 
 var baby = await dbContext.Set<Person>().SingleOrDefaultAsync(p => p.Name == "Baby Doe");
-baby.Dob = DateTime.Now;
+baby.NickName = Guid.NewGuid().ToString();
 dbContext.Set<Person>().Update(baby);
 await dbContext.SaveChangesAsync();
 Console.WriteLine("Success...");

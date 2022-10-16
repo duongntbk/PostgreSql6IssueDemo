@@ -45,6 +45,12 @@ Still inside the `NET 6` folder, run the following command.
 dotnet run fixed
 ```
 
+Or
+
+```
+dotnet run legacy
+```
+
 You should see the following result.
 ```
 Success...
